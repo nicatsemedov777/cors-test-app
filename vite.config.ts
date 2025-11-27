@@ -4,13 +4,10 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    host: true,
-    port: 5173,
     allowedHosts: [
       'leqalimza.az',
       'www.leqalimza.az',
       '161.35.208.15'
     ]
-  },
-  base: '/test/', // IMPORTANT!
+  }
 })
